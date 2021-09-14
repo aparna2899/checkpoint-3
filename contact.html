@@ -20,40 +20,45 @@
   <body>
     <header class="navbar">
       <div class="primary-header flex">
-        <div class="flex">
+        <nav class="flex">
           <address>
-            <i class="fas fa-map-marker-alt"></i>65/A, 17the floor, Kings land,
-            New York
+            <a href="#"><i class="fas fa-map-marker-alt"></i></a> 65/A, 17the
+            floor, Kings land, New York
           </address>
-          <address><i class="fas fa-envelope"></i>info@consulting.com</address>
-        </div>
-        <ul class="social-media-icons flex">
-          <li>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-google-plus-g"></i></a>
-          </li>
-        </ul>
+          <address>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            info@consulting.com
+          </address>
+        </nav>
+        <nav>
+          <ul class="social-media-icons flex">
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="secondary-header flex">
         <a class="brand" href="#">
-          <img src="assets/media/logo/logo.png" alt="" />
+          <img src="assets/media/logo/logo.png" alt="logo" />
         </a>
         <nav class="flex">
           <ul class="nav-menu flex">
-            <li><a href="index.html" target="_blank">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
             <li><a href="about.html" target="_blank">ABOUT</a></li>
             <li><a href="service.html" target="_blank">SERVICES</a></li>
             <li><a href="cases.html" target="_blank">CASES</a></li>
             <li><a href="blog.html" target="_blank">BLOG</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#" target="_blank">CONTACT</a></li>
           </ul>
           <a class="btn btn-primary" href="#">Contact Now</a>
         </nav>
@@ -63,8 +68,8 @@
       <section class="contact-background background">
         <h2>Contact Us</h2>
       </section>
-      <section>
-        <div class="container padding-b">
+      <section class="padding padding-b">
+        <div class="container">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105772.76092902187!2d-118.18004448047265!3d34.05929034031554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2d074766c77b1%3A0xa0351d489643887c!2sRosemead%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1631553099365!5m2!1sen!2sin"
             width="600"
@@ -75,7 +80,7 @@
           ></iframe>
         </div>
       </section>
-      <section class="contact-section container">
+      <section class="contact-section padding container">
         <h4>Get in Touch</h4>
         <div class="flex">
           <div class="contact-details">
@@ -105,7 +110,7 @@
                   class="contact-form"
                   type="text"
                   name="subject"
-                  placeholder="Subject"
+                  placeholder="Enter Subject"
                 />
               </fieldset>
               <a class="btn btn-tertiary" href="#">SEND</a>
@@ -136,10 +141,10 @@
           </aside>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact padding">
         <div class="container flex">
-          <article>
-            <h3>Request for call back</h3>
+          <article class="contact-content">
+            <h3>Request for Call Back</h3>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
               et numquam temporibus animi architecto cum?
@@ -164,9 +169,9 @@
                 </div>
                 <div class="flex">
                   <select class="form-control" name="service-option">
-                    <option value="service">Service</option>
-                    <option value="service1">Service1</option>
-                    <option value="service2">Service2</option>
+                    <option value="" disabled selected>Services</option>
+                    <option value="Service1">Service1</option>
+                    <option value="Service1">Service2</option>
                   </select>
                   <a class="btn btn-primary" href="#">Send</a>
                 </div>
@@ -177,7 +182,7 @@
       </section>
     </main>
     <footer>
-      <div class="container padding-b">
+      <div class="container padding padding-b">
         <div class="flex">
           <div class="footer-text">
             <a class="footer-brand" href="#">

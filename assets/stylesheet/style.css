@@ -144,7 +144,6 @@ body {
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 8% 0;
 }
 .flex {
   display: flex;
@@ -160,9 +159,20 @@ body {
 .flex-wrap {
   flex-wrap: wrap;
 }
-
+.flex-22 {
+  flex: 0 1 22%;
+}
 .flex-30 {
   flex: 0 1 30%;
+}
+.flex-40 {
+  flex: 0 1 40%;
+}
+.flex-60 {
+  flex: 0 1 60%;
+}
+.col {
+  flex: 0 1 32%;
 }
 a {
   text-decoration: none;
@@ -179,6 +189,7 @@ h2 {
 h3 {
   font-size: 30px;
   font-weight: 700;
+  line-height: 1.3;
 }
 h4 {
   font-size: 20px;
@@ -212,6 +223,9 @@ h4 {
 .center {
   text-align: center;
 }
+.padding {
+  padding: 8% 0;
+}
 /*Header*/
 .navbar {
   font-size: 12px;
@@ -225,7 +239,10 @@ h4 {
 }
 .primary-header a {
   color: white;
-  margin-left: 20px;
+  margin-right: 3px;
+}
+.social-media-icons a {
+  margin-right: 20px;
 }
 .primary-header {
   padding: 10px 140px;
@@ -248,10 +265,10 @@ h4 {
   background: url(../media/hero/h1_hero.jpg) center center no-repeat;
   background-size: cover;
   text-transform: uppercase;
-  padding: 4% 0;
 }
-.col-1 {
+.home-content {
   width: 45%;
+  padding: 5% 0;
 }
 .col-2 {
   width: 40%;
@@ -280,7 +297,7 @@ h4 {
   height: auto;
 }
 .team h4 {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 hr {
   width: 80px;
@@ -291,33 +308,39 @@ hr {
 .box {
   border: 3px solid var(--accent);
   background: white;
-  padding: 20px 25px 0 35px;
+  padding: 35px;
 }
 .team p,
 .box p {
   padding: 15px 0;
+  line-height: 1.7;
 }
-.box a {
+.box span {
   font-size: 14px;
   color: black;
-  display: inline-block;
-  padding-bottom: 40px;
+  margin-top: 10px;
+  vertical-align: middle;
 }
-
+.box h3 {
+  margin-bottom: 20px;
+}
+.box .fas {
+  font-size: 8px;
+}
 /* Section clients*/
-.clients img {
-  width: 500px;
-}
 .parent {
   position: relative;
+}
+.parent img {
+  width: 500px;
 }
 .transparent-box {
   background: rgba(255, 255, 255, 0.8);
   position: absolute;
-  top: 211px;
+  top: 25%;
   left: 400px;
   padding: 40px 50px;
-  width: 500px;
+  width: 450px;
 }
 .transparent-box p {
   padding: 30px 0;
@@ -339,23 +362,22 @@ hr {
 /*Cases section*/
 .cases {
   background: var(--bg);
-  position: relative;
-  padding: 8% 0;
+}
+.cases-content {
+  padding: 10% 0;
+  margin-right: 100px;
 }
 .cases p {
   padding-top: 15px;
   padding-bottom: 40px;
 }
 .cases-img {
-  position: absolute;
-  top: 20%;
-  left: 52%;
+  margin-right: -530px;
 }
 .cases-img img {
   width: 300px;
   margin-right: 10px;
 }
-
 /*Testimonial section*/
 .testimonial {
   width: 60%;
@@ -399,17 +421,18 @@ time {
   background: var(--primary);
   color: white;
 }
-.contact article {
+.contact-content {
   margin-right: 80px;
+  flex: 0 1 30%;
 }
-.contact article p {
+.contact-content p {
   color: white;
   padding: 20px 0;
   line-height: 1.6;
 }
 .details {
-  width: 100%;
   align-self: flex-start;
+  flex: 0 1 60%;
 }
 .form-control {
   background: transparent;
@@ -419,13 +442,14 @@ time {
   border-radius: 3px;
   padding: 12px 12px;
   margin: 10px;
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
 }
 .form-control::placeholder {
   color: white;
 }
 .contact .btn {
   padding: 12px 12%;
+  margin: 10px;
 }
 /*Footer*/
 .footer-text {
@@ -438,9 +462,9 @@ time {
 .footer-text p {
   margin: 20px 0;
 }
-.footer-text .social-media-icons i {
+.footer-text .social-media-icons a {
   color: black;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 footer h5 {
   color: var(--primary);
@@ -526,7 +550,6 @@ small span {
   background: url(../media/hero/blog_hero.jpg);
 }
 .blog-section {
-  width: 40%;
   margin-top: 5%;
 }
 .blog {
@@ -534,7 +557,7 @@ small span {
   position: relative;
   margin-bottom: 40px;
 }
-.blog article {
+.blog-content {
   background: white;
   padding-top: 8%;
   padding-bottom: 20px;
@@ -542,7 +565,6 @@ small span {
   padding-right: 40px;
   box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
 }
-
 .blog .red-box {
   position: absolute;
   background: var(--accent);
@@ -553,7 +575,6 @@ small span {
   border-radius: 4px;
   top: 50%;
   left: 5%;
-  z-index: 1;
 }
 .blog strong {
   font-size: 24px;
@@ -567,6 +588,7 @@ small span {
 .blog i {
   font-size: 12px;
   color: var(--text);
+  margin-right: 8px;
 }
 .next {
   border: 1px solid rgba(194, 188, 188, 0.4);
@@ -575,7 +597,6 @@ small span {
   color: var(--text);
   margin-right: 10px;
   margin-top: 5%;
-  margin-bottom: 5%;
 }
 .next a {
   color: var(--text);
@@ -586,17 +607,16 @@ small span {
 /*aside*/
 
 .sidebar {
-  width: 22%;
   align-self: flex-start;
   margin-top: 5%;
 }
-.aside {
+.aside-content {
   background: var(--bg);
   margin-left: 20px;
   margin-bottom: 30px;
   padding: 20px;
 }
-.aside .btn-tertiary {
+.aside-content .btn-tertiary {
   width: 100%;
 }
 .search {
@@ -620,7 +640,7 @@ small span {
   font-size: 12px;
   padding: 8px 0;
 }
-.aside hr {
+.aside-content hr {
   border: none;
   border-top: 1px solid rgba(194, 188, 188, 0.2);
   width: 100%;
@@ -632,7 +652,7 @@ small span {
   margin-right: 10px;
 }
 .post strong {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
 }
 .post time {
@@ -673,7 +693,7 @@ small span {
 }
 .blog-footer {
   background: var(--bg);
-  padding: 8% 20% 30px 20%;
+  margin-top: 8%;
 }
 
 /* Contact Page*/
@@ -693,18 +713,17 @@ iframe {
   margin-bottom: 15px;
   border: 1px solid rgba(194, 188, 188, 0.4);
   font-family: "Poppins", sans-serif;
-  font-size: 12px;
+  font-size: 10px;
+}
+.contact-form::placeholder {
   color: var(--text);
 }
 .contact-details {
-  width: 65%;
   margin-bottom: 20px;
+  flex: 0 1 70%;
 }
 .small-box {
   width: 48%;
-}
-.contact-details a {
-  margin-top: 20px;
 }
 .contact-section aside {
   align-self: flex-start;
@@ -714,7 +733,8 @@ iframe {
 .contact-section aside a {
   color: var(--text);
   font-size: 20px;
-  margin-right: 5px;
+  margin: 10px;
+  width: 15px;
 }
 .contact-section aside address {
   margin: 10px;

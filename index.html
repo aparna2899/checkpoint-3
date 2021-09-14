@@ -20,31 +20,36 @@
   <body>
     <header class="navbar">
       <div class="primary-header flex">
-        <div class="flex">
+        <nav class="flex">
           <address>
-            <i class="fas fa-map-marker-alt"></i>65/A, 17the floor, Kings land,
-            New York
+            <a href="#"><i class="fas fa-map-marker-alt"></i></a> 65/A, 17the
+            floor, Kings land, New York
           </address>
-          <address><i class="fas fa-envelope"></i>info@consulting.com</address>
-        </div>
-        <ul class="social-media-icons flex">
-          <li>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-google-plus-g"></i></a>
-          </li>
-        </ul>
+          <address>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            info@consulting.com
+          </address>
+        </nav>
+        <nav>
+          <ul class="social-media-icons flex">
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="secondary-header flex">
         <a class="brand" href="#">
-          <img src="assets/media/logo/logo.png" alt="" />
+          <img src="assets/media/logo/logo.png" alt="logo" />
         </a>
         <nav class="flex">
           <ul class="nav-menu flex">
@@ -60,18 +65,18 @@
       </div>
     </header>
     <main>
-      <section class="home">
+      <section class="home padding">
         <div class="container">
-          <div class="col-1">
-            <p>welcom to buson</p>
+          <div class="home-content">
+            <p>welcome to buson</p>
             <h1>we help you to grow your business</h1>
             <a class="btn btn-primary" href="#">learn more</a>
           </div>
         </div>
       </section>
-      <section class="team-section">
+      <section class="team-section padding">
         <div class="container flex">
-          <article class="team flex-30">
+          <article class="team col">
             <img
               class="flexible-img"
               src="assets/media/team/team_1.jpg"
@@ -83,7 +88,7 @@
               itaque minima at quia.
             </p>
           </article>
-          <article class="team flex-30">
+          <article class="team col">
             <img
               class="flexible-img"
               src="assets/media/team/team_2.jpg"
@@ -95,18 +100,21 @@
               itaque minima at quia.
             </p>
           </article>
-          <article class="box flex-30">
+          <article class="box col">
             <h3>What we do for you</h3>
             <hr />
             <p>
               Lorem ipsum dolor sit amet consect adiping elit. Volatibus dolorem
               repudiandae est. Optio, accusamus vero at.
             </p>
-            <a href="#">View profile</a>
+            <a href="#"
+              ><span>View profile</span>
+              <i class="fas fa-angle-double-right"></i
+            ></a>
           </article>
         </div>
       </section>
-      <section class="clients">
+      <section class="clients padding padding-b">
         <div class="parent container">
           <div>
             <img src="assets/media/team/team_3.jpg" alt="team-03" />
@@ -122,7 +130,7 @@
           </article>
         </div>
       </section>
-      <section class="service-section">
+      <section class="service-section padding">
         <div class="container center">
           <h2>Our Services</h2>
           <div class="flex">
@@ -154,9 +162,9 @@
           <a class="btn btn-secondary" href="#">More services</a>
         </div>
       </section>
-      <section class="cases">
-        <div class="container">
-          <article class="col-1">
+      <section class="cases padding">
+        <div class="container flex">
+          <article class="cases-content">
             <h3>Completed Cases</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
@@ -165,13 +173,20 @@
             </p>
             <a class="btn btn-secondary" href="#">See more</a>
           </article>
-        </div>
-        <div class="cases-img">
-          <img src="assets/media/cases/completed_case_2.png" alt="" />
-          <img src="assets/media/cases/completed_case_1.png" alt="" />
+          <div class="cases-img flex">
+            <div>
+              <img src="assets/media/cases/completed_case_2.png" alt="pic-01" />
+            </div>
+            <div>
+              <img src="assets/media/cases/completed_case_1.png" alt="pic-02" />
+            </div>
+            <div>
+              <img src="assets/media/cases/completed_case_2.png" alt="pic-01" />
+            </div>
+          </div>
         </div>
       </section>
-      <section>
+      <section class="padding padding-b">
         <div class="container center flex">
           <i class="fas fa-angle-left"></i>
           <div class="testimonial">
@@ -195,11 +210,11 @@
           <i class="fas fa-angle-right"></i>
         </div>
       </section>
-      <section>
+      <section class="recent-news-section padding">
         <div class="container">
           <h2 class="center">Our Recent News</h2>
           <div class="news flex">
-            <article class="team flex-30">
+            <article class="team col">
               <img
                 class="flexible-img"
                 src="assets/media/recent/rcent_1.png"
@@ -211,7 +226,7 @@
                 <time datetime="">NOV 30, 2020</time>
               </div>
             </article>
-            <article class="team flex-30">
+            <article class="team col">
               <img
                 class="flexible-img"
                 src="assets/media/recent/rcent_2.png"
@@ -223,7 +238,7 @@
                 <time datetime="">NOV 30, 2020</time>
               </div>
             </article>
-            <article class="team flex-30">
+            <article class="team col">
               <img
                 class="flexible-img"
                 src="assets/media/recent/rcent_3.png"
@@ -238,10 +253,10 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact padding">
         <div class="container flex">
-          <article>
-            <h3>Request for call back</h3>
+          <article class="contact-content">
+            <h3>Request for Call Back</h3>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
               et numquam temporibus animi architecto cum?
@@ -266,9 +281,9 @@
                 </div>
                 <div class="flex">
                   <select class="form-control" name="service-option">
-                    <option value="service">Service</option>
-                    <option value="service1">Service1</option>
-                    <option value="service2">Service2</option>
+                    <option value="" disabled selected>Services</option>
+                    <option value="Service1">Service1</option>
+                    <option value="Service1">Service2</option>
                   </select>
                   <a class="btn btn-primary" href="#">Send</a>
                 </div>
@@ -279,16 +294,13 @@
       </section>
     </main>
     <footer>
-      <div class="container padding-b">
+      <div class="container padding padding-b">
         <div class="flex">
           <div class="footer-text">
             <a class="footer-brand" href="#">
               <img src="assets/media/logo/logo2_footer.png" alt=""
             /></a>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
-              cumque?
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <div class="social-media-icons">
               <a href="#"><i class="fab fa-facebook-square"></i></a>
               <a href="#"><i class="fab fa-twitter-square"></i></a>

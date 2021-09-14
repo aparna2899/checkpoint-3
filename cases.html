@@ -20,38 +20,43 @@
   <body>
     <header class="navbar">
       <div class="primary-header flex">
-        <div class="flex">
+        <nav class="flex">
           <address>
-            <i class="fas fa-map-marker-alt"></i>65/A, 17the floor, Kings land,
-            New York
+            <a href="#"><i class="fas fa-map-marker-alt"></i></a> 65/A, 17the
+            floor, Kings land, New York
           </address>
-          <address><i class="fas fa-envelope"></i>info@consulting.com</address>
-        </div>
-        <ul class="social-media-icons flex">
-          <li>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-google-plus-g"></i></a>
-          </li>
-        </ul>
+          <address>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            info@consulting.com
+          </address>
+        </nav>
+        <nav>
+          <ul class="social-media-icons flex">
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="secondary-header flex">
         <a class="brand" href="#">
-          <img src="assets/media/logo/logo.png" alt="" />
+          <img src="assets/media/logo/logo.png" alt="logo" />
         </a>
         <nav class="flex">
           <ul class="nav-menu flex">
-            <li><a href="index.html" target="_blank">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
             <li><a href="about.html" target="_blank">ABOUT</a></li>
             <li><a href="service.html" target="_blank">SERVICES</a></li>
-            <li><a href="#">CASES</a></li>
+            <li><a href="#" target="_blank">CASES</a></li>
             <li><a href="blog.html" target="_blank">BLOG</a></li>
             <li><a href="contact.html" target="_blank">CONTACT</a></li>
           </ul>
@@ -63,7 +68,7 @@
       <section class="cases-background background">
         <h2>Case Study</h2>
       </section>
-      <section>
+      <section class="padding">
         <div class="container">
           <div class="flex">
             <div class="case-study">
@@ -113,10 +118,10 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact padding">
         <div class="container flex">
-          <article>
-            <h3>Request for call back</h3>
+          <article class="contact-content">
+            <h3>Request for Call Back</h3>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
               et numquam temporibus animi architecto cum?
@@ -141,9 +146,9 @@
                 </div>
                 <div class="flex">
                   <select class="form-control" name="service-option">
-                    <option value="service">Service</option>
-                    <option value="service1">Service1</option>
-                    <option value="service2">Service2</option>
+                    <option value="" disabled selected>Services</option>
+                    <option value="Service1">Service1</option>
+                    <option value="Service1">Service2</option>
                   </select>
                   <a class="btn btn-primary" href="#">Send</a>
                 </div>
@@ -154,7 +159,7 @@
       </section>
     </main>
     <footer>
-      <div class="container padding-b">
+      <div class="container padding padding-b">
         <div class="flex">
           <div class="footer-text">
             <a class="footer-brand" href="#">

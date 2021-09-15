@@ -619,19 +619,23 @@ small span {
 .aside-content .btn-tertiary {
   width: 100%;
 }
+.search-content form {
+  flex: 0 1 90%;
+}
 .search {
-  border: 1px solid rgba(194, 188, 188, 0.4);
-  background: white;
+  margin-top: 15px;
   margin-bottom: 15px;
-}
-.search p {
-  font-size: 12px;
   padding: 10px;
+  width: 100%;
+  border-radius: 0;
+  border: 1px solid rgba(194, 188, 188, 0.4);
 }
-.search a {
+.search-content a {
   background: var(--accent);
-  padding: 10px;
+  padding: 6px;
   color: white;
+  flex: 0 1 10%;
+  text-align: center;
 }
 .category li h5 {
   margin-bottom: 0;
@@ -683,13 +687,12 @@ small span {
 .feeds {
   margin-top: 30px;
 }
-.mail {
+.email {
   border: 1px solid rgba(194, 188, 188, 0.4);
-  background: white;
-
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 10px;
+  width: 100%;
 }
 .blog-footer {
   background: var(--bg);

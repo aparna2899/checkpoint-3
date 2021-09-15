@@ -178,8 +178,15 @@
         </section>
         <aside class="sidebar flex-22">
           <div class="aside-content">
-            <div class="search flex">
-              <p>Search Keyword</p>
+            <div class="search-content flex flex-start">
+              <form action="index.html">
+                <input
+                  class="search"
+                  type="search"
+                  name="search"
+                  placeholder="Search"
+                />
+              </form>
               <a href="#"><i class="fas fa-search"></i></a>
             </div>
             <a class="btn btn-tertiary center" href="#">SEARCH</a>
@@ -264,9 +271,14 @@
           <div class="aside-content">
             <h5>Newsletter</h5>
             <hr />
-            <div class="mail flex">
-              <p>Enter email</p>
-            </div>
+            <form action="index.html">
+              <input
+                class="email"
+                type="email"
+                name="email"
+                placeholder="Enter email"
+              />
+            </form>
             <a class="btn btn-tertiary center" href="#">SUBSCRIBE</a>
           </div>
         </aside>
